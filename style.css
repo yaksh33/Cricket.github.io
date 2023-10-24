@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    background: lightskyblue;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+
+
+p {
+    color: black;
+}
+ 
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: black;
+}
+
+header ::after {
+    content: '';
+    display: table;
+    clear:both;
+}
+
+.x{
+    float: left;
+    width: 130px;
+    float: left;
+    margin-top: -5px;
+    padding: 10px;
+}
+.history{
+    float: middle;
+    width: 300px;
+    float: middle;
+    margin-top: 0px;
+    padding: 10px;
+}
+
+.Wickets {
+   
+        display: block; /* To clear any previous floats */
+        margin: 0 auto;  /* Center the image horizontally */
+        width: 150px;    /* Set the desired width */
+        height: auto;    /* Let the height adjust proportionally */
+        margin-top: 0;   /* Adjust margin-top as needed */
+        padding: 10px;   /* Adjust padding as needed */
+    
+}
+
+nav {
+    float: right;
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+
+    position: relative;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px ;
+}
+
+nav a:hover {
+    color: gold;
+  }
+
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+  
+    position: absolute;
+    top: 0;
+    width: 0%;
+  
+    transition: all ease-in-out 250ms;
+  }
+  
+  nav a:hover::before {
+    width: 100%;
+  }
+
+  .instagram-link {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+  }
+  
+  .instagram-link img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
